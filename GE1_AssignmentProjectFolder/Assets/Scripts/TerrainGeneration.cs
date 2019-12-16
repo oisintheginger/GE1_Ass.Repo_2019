@@ -25,9 +25,7 @@ public class TerrainGeneration : MonoBehaviour
     TerrainData Perlinify(TerrainData data)
     {
         data.heightmapResolution = width + 1;
-
         
-
         data.size = new Vector3(width, height, length);
 
         data.SetHeights(0, 0, GenerateAltitudes());
@@ -35,6 +33,7 @@ public class TerrainGeneration : MonoBehaviour
         return data;
     }
 
+    //2D Array to 
     float[,] GenerateAltitudes()
     {
         float[,] altitudes = new float[width, length];
