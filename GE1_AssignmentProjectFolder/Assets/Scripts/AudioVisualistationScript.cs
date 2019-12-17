@@ -2,20 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//This script requires the gameobject to have and audiosource
+//This script requires the gameobject to have an audiosource
+//Being a public class means that any of the other scripts can access the audio data
 [RequireComponent (typeof (AudioSource))]
 public class AudioVisualistationScript : MonoBehaviour
 {
     AudioSource _AS;
     public static float[] samplesArray = new float[256];
     public static float[] freqBand = new float[8];
-    // Start is called before the first frame update
     void Start()
     {
         _AS = GetComponent<AudioSource>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         GetAudioSpectrum();
