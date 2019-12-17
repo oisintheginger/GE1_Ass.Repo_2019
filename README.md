@@ -81,4 +81,4 @@
 
 **Left Analog   		- Angle Ship**
 
-**X Button 			- Start/Switch Music
+**X Button 			- Start/Switch Music**
