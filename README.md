@@ -11,15 +11,15 @@
 
 	Visually it will be a combination of these: 
 
-	[![YouTube](http://img.youtube.com/vi/N8Ql7aYBQP8/0.jpg)](https://www.youtube.com/watch?v=N8Ql7aYBQP8)
+[![YouTube](http://img.youtube.com/vi/N8Ql7aYBQP8/0.jpg)](https://www.youtube.com/watch?v=N8Ql7aYBQP8)
 
-	[![YouTube](http://img.youtube.com/vi/vFvwyu_ZKfU/0.jpg)](https://www.youtube.com/watch?v=vFvwyu_ZKfU)
+[![YouTube](http://img.youtube.com/vi/vFvwyu_ZKfU/0.jpg)](https://www.youtube.com/watch?v=vFvwyu_ZKfU)
 
-	[![YouTube](http://img.youtube.com/vi/apPGPLQnOV8/0.jpg)](https://www.youtube.com/watch?v=apPGPLQnOV8)
+[![YouTube](http://img.youtube.com/vi/apPGPLQnOV8/0.jpg)](https://www.youtube.com/watch?v=apPGPLQnOV8)
 
 ### Stretch Goals: 
 
-				1. Randomly Rotating polyhedron in the center of the screen.
+				~~1. Randomly Rotating polyhedron in the center of the screen.~~
 
 
 # Technical Report, 'Orbit Flyer'
