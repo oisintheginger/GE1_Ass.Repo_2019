@@ -32,4 +32,4 @@ different music. There is a perlin noise terrain at the bottom of the play-space
 
 ###Credits:
 For Orbiting Motion this tutorial series was crucial:
-[![YouTube](http://img.youtube.com/vi/mQKGRoV_jBc/0.jpg)](https://www.youtube.com/watch?v=mQKGRoV_jBc
+[![YouTube](http://img.youtube.com/vi/mQKGRoV_jBc/0.jpg)](https://www.youtube.com/watch?v=mQKGRoV_jBc)
