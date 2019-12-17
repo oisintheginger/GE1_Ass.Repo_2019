@@ -49,12 +49,16 @@
 
 [![YouTube](http://img.youtube.com/vi/vFvwyu_ZKfU/0.jpg)](https://www.youtube.com/watch?v=vFvwyu_ZKfU)
 
-	3. 	For the general idea on using a public class for audio visualization this tutorial was useful:
+	3. 	For the planet projectiles I used this tutorial to implement Ammo Pools
+
+[![YouTube](http://img.youtube.com/vi/tdSmKaJvCoA/0.jpg)](https://www.youtube.com/watch?v=tdSmKaJvCoA)
+
+	4. 	For the general idea on using a public class for audio visualization this tutorial was useful:
 
 [![YouTube](http://img.youtube.com/vi/Ri1uNPNlaVs/0.jpg)](https://www.youtube.com/watch?v=Ri1uNPNlaVs) 
    
  		I also used the Game Engines 1 repo for its audio example for the beat sampling
 
-	4. 	The Hologram shader code was created from this tutorial:
+	5. 	The Hologram shader code was created from this tutorial:
 	
 [![YouTube](http://img.youtube.com/vi/vlYGmVC_Qzg/0.jpg)](https://www.youtube.com/watch?v=vlYGmVC_Qzg)
