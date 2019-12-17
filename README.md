@@ -67,10 +67,10 @@
 
 ##Instructions:
 
-	**Right Trigger - Accelerate**
+**Right Trigger - Accelerate**
 
-	**Left Trigger  - Brake**
+**Left Trigger  - Brake**
 
-	**Right Analog (left-right)  - Volume Control**
+**Right Analog (left-right)  - Volume Control**
 
-	**Left Analog   -Angle ship**
+**Left Analog   -Angle ship**
