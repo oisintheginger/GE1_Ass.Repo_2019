@@ -65,11 +65,11 @@
 
 
 ####						Music References:
--Dynatron 'Pulse Power'-
--Eva 失望した-
--MK Ultra Tears in The Rain-
--Vodovoz Blue Journey-
--Vodovoz Drive By Night-
+_Dynatron 'Pulse Power'_
+_Eva 失望した_
+_MK Ultra Tears in The Rain_
+_Vodovoz Blue Journey_
+_Vodovoz Drive By Night_
 
 ## Instructions:
 
