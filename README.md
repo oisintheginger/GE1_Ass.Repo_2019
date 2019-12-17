@@ -62,3 +62,15 @@
 	5. 	The Hologram shader code was created from this tutorial:
 	
 [![YouTube](http://img.youtube.com/vi/vlYGmVC_Qzg/0.jpg)](https://www.youtube.com/watch?v=vlYGmVC_Qzg)
+
+
+
+##Instructions:
+
+	**Right Trigger - Accelerate**
+
+	**Left Trigger  - Brake**
+
+	**Right Analog (left-right)  - Volume Control**
+
+	**Left Analog   -Angle ship**
