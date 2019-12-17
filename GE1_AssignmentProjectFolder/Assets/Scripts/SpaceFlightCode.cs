@@ -24,7 +24,7 @@ public class SpaceFlightCode : MonoBehaviour
     //The Camera fov changes when boosting or braking to enhance feeling of 'speed'
     void FixedUpdate()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetAxis("X Button")>0) 
         {
             musicSelect();
         }

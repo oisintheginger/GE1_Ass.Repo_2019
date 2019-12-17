@@ -64,13 +64,21 @@
 [![YouTube](http://img.youtube.com/vi/vlYGmVC_Qzg/0.jpg)](https://www.youtube.com/watch?v=vlYGmVC_Qzg)
 
 
+####						Music References:
+-Dynatron 'Pulse Power'-
+-Eva 失望した-
+-MK Ultra Tears in The Rain-
+-Vodovoz Blue Journey-
+-Vodovoz Drive By Night-
 
 ## Instructions:
 
-**Right Trigger - Accelerate**
+**Right Trigger 		- Accelerate**
 
-**Left Trigger  - Brake**
+**Left Trigger  		- Brake**
 
-**Right Analog (left-right)  - Volume Control**
+**Right Analog (left-right)  	- Volume Control**
 
-**Left Analog   -Angle ship**
+**Left Analog   		- Angle Ship**
+
+**X Button 			- Start/Switch Music
