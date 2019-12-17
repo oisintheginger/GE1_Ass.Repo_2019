@@ -1,5 +1,7 @@
 ﻿Shader "Unlit/TestShader"
 {
+	//I have little to no experience with shaderLab, so the hologram shader used is not of my own design
+	//This script is from a tutorial found here: https://www.youtube.com/watch?v=vlYGmVC_Qzg
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
@@ -16,14 +18,12 @@
         Tags { "Queue"="Transparent" "RenderType" = "Transparent" }
         LOD 100
 		ZWrite Off
-		//Blend SrcAlpha OneMinusSrcAlpha
 		Blend SrcAlpha One
         Pass
         {
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            // make fog work
             #pragma multi_compile_fog
 
             #include "UnityCG.cginc"
@@ -55,7 +55,6 @@
             v2f vert (appdata v)
             {
                 v2f o;
-				//o.objVertex = v.vertex;
 				o.objVertex = mul(unity_ObjectToWorld, v.vertex);
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
@@ -65,10 +64,7 @@
 
             fixed4 frag (v2f i) : SV_Target
             {
-
-                // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
-                // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
 				col = _Color * max(0, sin(i.objVertex.y * _ScanningFrequency + _Time.x * _ScanningSpeed) + _Bias);
                 return col;

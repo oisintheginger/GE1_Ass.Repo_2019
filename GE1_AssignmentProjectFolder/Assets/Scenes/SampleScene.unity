@@ -419,12 +419,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629ddf44c2c9c6e45a125ff671bda695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 1219969380}
   speed: 30
   boost: 90
   braking: 0
   pitch: 1.09
   roll: 0.8
   mC: {fileID: 963194227}
+  musicSelection:
+  - {fileID: 8300000, guid: 19e866c8d2e4d584f8409233675cd969, type: 3}
+  - {fileID: 8300000, guid: ef3bf0e6a17bf1748bac4a25f49fcf6e, type: 3}
+  - {fileID: 8300000, guid: 50f2faf5ef35714479ccc2f80f4a065d, type: 3}
+  - {fileID: 8300000, guid: f40e45d6619ad27459a2cef1b1e73158, type: 3}
+  - {fileID: 8300000, guid: 6b7fc154cce187c428d0e3e678fc1a50, type: 3}
+  - {fileID: 8300000, guid: 8e45bada93d56e847aca5ffd22dce5d6, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,7 +506,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -5.1418493e-36, z: 4.27e-43, w: -4.9139883e-36}
+  m_BoundingSphereOverride: {x: 1.5e-44, y: 0, z: 1.25, w: 6e-45}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -930,7 +938,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 150a0c4f039243b4fbec1758c5838f50, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.113
   m_Pitch: 1
@@ -1662,7 +1670,7 @@ MonoBehaviour:
   OrbiterPrefab: {fileID: 3635896125526201700, guid: b6104b64e5f5e674c8ed98489cd29694,
     type: 3}
   player: {fileID: 504811862}
-  planetsToSpawn: 7
+  planetsToSpawn: 8
   MinDistance: 80
   MaxDistance: 90
   maxAngle: 65

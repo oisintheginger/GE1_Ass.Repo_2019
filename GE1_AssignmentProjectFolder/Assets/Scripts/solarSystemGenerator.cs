@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 /// <summary>
 /// This script is used to generate multiple 'orbits'
 /// each new orbit has a planetScript.cs attached
@@ -31,10 +32,19 @@ public class solarSystemGenerator : MonoBehaviour
             pS.player = player;
             pS.detectionRadius = detectRadius;
             pS.lookSpeed = lookSpeed;
+            
             pS.xIn = Random.Range(MinDistance, MaxDistance);
             pS.zIn = Random.Range(MinDistance, MaxDistance);
             pS.orbitAngle = Random.Range(0f, maxAngle);
-            pS.orbitTime = Random.Range(5f, 10f);
+            pS.orbitTime = Random.Range(6f, 15f);
+
+            //just to randomise the clockwise/anticlockwise orbits of planets
+            float positive = Random.Range(0, 10);
+            float negative = Random.Range(0, 10);
+            if (negative < positive)
+            {
+                pS.orbitTime *= -1f;
+            }
             Instantiate(newOrbit);
 
         }
