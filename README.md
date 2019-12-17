@@ -19,7 +19,7 @@
 
 ### Stretch Goals: 
 
-				~~1. Randomly Rotating polyhedron in the center of the screen.~~
+				1. ~~Randomly Rotating polyhedron in the center of the screen.~~
 
 
 # Technical Report, 'Orbit Flyer'
