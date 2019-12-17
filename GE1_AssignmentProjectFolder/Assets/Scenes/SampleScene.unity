@@ -165,11 +165,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sectionPrefab: {fileID: 265007923230063063, guid: 9fa3e3e0e69be834e8c83a4ff64e3487,
     type: 3}
-  maxHeight: 3283.13
+  sunObject: {fileID: 1962850877}
+  maxHeight: 1852.55
   radius: 65.3
   baseLength: 2
   maxLengthScale: 32.07
   lookSpeed: 0.91
+  maxRadius: 19.81
+  scaler: 82.7
+  baseRadius: 8.57
+  lerpSpeed: 1.53
+  MAXSPHERESCALE: 23.76
+  TOOBIGLERPSPEED: 8.99
+  visualizerLerp: 5.66
   sunPosition: {fileID: 1750296487}
   TargetToFollow: {fileID: 1137999509}
 --- !u!1 &197719257
@@ -392,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504811862}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 126, y: 24.501, z: 30.729}
+  m_LocalPosition: {x: 126, y: 167.6, z: 122.4}
   m_LocalScale: {x: 0.010463998, y: 0.010463998, z: 0.010463998}
   m_Children:
   - {fileID: 1137999509}
@@ -411,9 +419,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629ddf44c2c9c6e45a125ff671bda695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 97.49
-  pitch: 3.18
-  roll: 1.9
+  speed: 30
+  boost: 90
+  braking: 0
+  pitch: 1.09
+  roll: 0.8
+  mC: {fileID: 963194227}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +498,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 8.7e-44, y: 0, z: 1.47e-43, w: 0.203125}
+  m_BoundingSphereOverride: {x: 0, y: -5.1418493e-36, z: 4.27e-43, w: -4.9139883e-36}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -648,7 +659,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 85.1
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -909,8 +920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9aab47e6f4f3bd4db4735f841dbb639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  higherScale: 1.61
-  lowerScale: 2253.38
 --- !u!82 &1219969382
 AudioSource:
   m_ObjectHideFlags: 0
@@ -923,7 +932,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 150a0c4f039243b4fbec1758c5838f50, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.09
+  m_Volume: 0.113
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1631,7 +1640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750296486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 126, y: 16.7, z: 126}
+  m_LocalPosition: {x: 126, y: 97.3, z: 126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1962850882}
@@ -1655,10 +1664,10 @@ MonoBehaviour:
   player: {fileID: 504811862}
   planetsToSpawn: 7
   MinDistance: 80
-  MaxDistance: 120
-  maxAngle: 15
-  detectRadius: 55.02
-  lookSpeed: 5.68
+  MaxDistance: 90
+  maxAngle: 65
+  detectRadius: 32.32
+  lookSpeed: 13.9
 --- !u!1 &1868117903
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,13 +1713,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodySegment: {fileID: 8091213418846110440, guid: 444bd1b07cacfad4bb2e0d86ebd8bcb2,
     type: 3}
-  head: {fileID: 0}
   spacing: 0.01
   waveHeight: 0.64
   speed: -2
-  delay: 0.175
   segments: 16
-  num: 0
   segmentsArray: []
 --- !u!1 &1962850877
 GameObject:
@@ -1749,6 +1755,11 @@ MonoBehaviour:
     yAxis: 4.24
   planetObject: {fileID: 0}
   player: {fileID: 0}
+  waitToShoot: 0.5
+  shootPoint: {fileID: 0}
+  projectile: {fileID: 0}
+  bulletSpeed: 0
+  waitShoot: 1
   orbitComplete: 0
   orbitTime: 3
   orbitSpeed: 0
@@ -1757,6 +1768,11 @@ MonoBehaviour:
   zIn: 0
   lookSpeed: 0
   detectionRadius: 0
+  maxRadius: 0
+  baseRadius: 0
+  scaler: 0
+  lerpSpeed: 0
+  ammunitionPoolsList: []
 --- !u!114 &1962850879
 MonoBehaviour:
   m_ObjectHideFlags: 0

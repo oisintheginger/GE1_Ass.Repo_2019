@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// This script is used to generate multiple 'orbits'
+/// each new orbit has a planetScript.cs attached
+/// At runtime, a prefab orbit is used to generate a specific amount of new orbits
+/// Each orbit has a center, and a 'planet object' as a child object
+/// The orbit values for the angle of orbit, the speed, and the detection, the looking speed, and other variables are set when they are created
+/// </summary>
 public class solarSystemGenerator : MonoBehaviour
 {
     [SerializeField]
@@ -12,12 +20,12 @@ public class solarSystemGenerator : MonoBehaviour
     [SerializeField]
     float MinDistance,MaxDistance, maxAngle,detectRadius, lookSpeed;
     
-    // Start is called before the first frame update
     void Start()
     {
         for(int i = 0; i<planetsToSpawn; i++)
         {
             GameObject newOrbit = OrbiterPrefab;
+            newOrbit.transform.position = this.transform.position;
             newOrbit.transform.rotation *= Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.up);
             planetScript pS = newOrbit.GetComponent<planetScript>();
             pS.player = player;
