@@ -38,6 +38,19 @@
 		sun and the planets respond to sound beats from the music. The player can randomly choose to play
 		different music. There is a perlin noise terrain at the bottom of the play-space. 
 
+##						Video Demo
+
+
+[![YouTube](http://img.youtube.com/vi/Ab7uQwWwCyQ/0.jpg)](https://www.youtube.com/watch?v=Ab7uQwWwCyQ)
+
+
+## 						Post- Assignment Analysis
+Overall I am happy with this project. While the scale and complexity are simple and basic enough, I feel I was able to create a nice user experience while listening to music. The theme 
+is done well and the little gameplay elements that I added such as out of bounds constraints, fov altering, controller input, volume control and music selection help the experience overall.
+I was also glad to be able to use the information I found on orbiting objects and use it to create the player 'tail'. This was something I found difficult to figure out, and I tried multiple
+methods before arriving at the final solution, which borrows theory from the orbiting script to create altitudes for the different tail segments. Mirroring the central visualiser was a simple
+matter, however I was happy how it turned out.
+
 ### 						Credits:
 
 	1. 	For Orbiting Motion this tutorial series was crucial:
