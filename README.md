@@ -65,6 +65,7 @@
 
 
 ###						Music References:
+
 _Dynatron 'Pulse Power'_
 
 _Eva 失望した_
@@ -75,7 +76,8 @@ _Vodovoz Blue Journey_
 
 _Vodovoz Drive By Night_
 
-## Instructions:
+
+## 						Instructions:
 
 **Right Trigger 		- Accelerate**
 
@@ -86,3 +88,25 @@ _Vodovoz Drive By Night_
 **Left Analog   		- Angle Ship**
 
 **X Button 			- Start/Switch Music**
+
+
+## 						Implementation
+
+###	1. 					Player ship:
+
+The player ship is constructed from basic unity shapes combined together. There are trail renderers on the engines. There is also
+ a metallic material on the ship. The movement is created by simply adding a rigidbody to the player, disabling the gravity and constantly
+adding force in the forward direction of the player. The player can boost and brake using the Xbox One controller. To steer, the input axis of the left analog stick
+is utilised to rotate the player object. I also implemented a system to reduce manueverability of steering when the player boosts. The FOV of the camera also changes to 
+enhance the sensation of speed of the player. The player is also able to alter the volume of the audiosource using the the right analog stick.
+
+### 	2.					Central Visualizer
+
+The central visualizer is created at runtime. Prefab segments are spawned in a circle. In order to only scale in one direction,
+the actual cube to visualize the sound is childed to a parent object. By placing the parent at the base of a cube, when the parent object is scaled in its z axis,
+it means the child cube is stretch around the center of the parent object, meaning it stretches in one direction. The Visualizer accesses a public class which gathers
+the audio sampling data for the entire project. The scale of each of the 256 segments is altered by one of the samples from the first 64 samples in the samples array.
+I decided to repeat the first 64 samples because it made the visualizer more interesting. If I used all 256 samples, most of the visualizer
+would not be scaling much to the music, being rather boring. The Visualizer also rotates to  follow the player position, meaning that it can be viewed from 
+any position when looked at.
+
