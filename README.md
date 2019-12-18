@@ -131,4 +131,10 @@ The solar system is randomly generated at the start of the game. The angle and s
 to the beat of the music playing.
 
 When the player gets too close to a planet, the planet stops in its orbit, lerps its rotation to target the player and shoots projectiles at the player to jostle them.
-The planets each have an ammunition pool from which to pull. This means that 
+The planets each have an ammunition pool from which to pull. This means that new projectiles do not have to be instantiated over and over.
+
+### 	4. 					The Perlin Noise Terrain
+
+Thte perlin noise terrain follows the tutorial outlined by Brackeys. It utilizes the terrain system in unity. By feeding values from a 2D float array into a Terrain Data method
+, perlin noise is applied to the x,z coordinates to create a perlin noise altitude. The Terrain data is then fed into the Terrain Object. The terrain is offset, which increases by
+ Time.Deltatime
