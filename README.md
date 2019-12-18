@@ -135,6 +135,11 @@ The planets each have an ammunition pool from which to pull. This means that new
 
 ### 	4. 					The Perlin Noise Terrain
 
-Thte perlin noise terrain follows the tutorial outlined by Brackeys. It utilizes the terrain system in unity. By feeding values from a 2D float array into a Terrain Data method
+The perlin noise terrain follows the tutorial outlined by Brackeys. It utilizes the terrain system in unity. By feeding values from a 2D float array into a Terrain Data method
 , perlin noise is applied to the x,z coordinates to create a perlin noise altitude. The Terrain data is then fed into the Terrain Object. The terrain is offset, which increases by
- Time.Deltatime
+ Time.Deltatime in order to create a 'moving' terrain.
+
+### 	5.					Hologram Shader
+
+The hologram shader was beyond my knowledge of coding. I am unfamiliar with ShaderLab syntax, so I was completely reliant on the source tutorial to implement it. I wanted to avoid using
+ShaderGraph as I wanted to focus on code for this assignment.
