@@ -98,7 +98,8 @@ The player ship is constructed from basic unity shapes combined together. There 
  a metallic material on the ship. The movement is created by simply adding a rigidbody to the player, disabling the gravity and constantly
 adding force in the forward direction of the player. The player can boost and brake using the Xbox One controller. To steer, the input axis of the left analog stick
 is utilised to rotate the player object. I also implemented a system to reduce manueverability of steering when the player boosts. The FOV of the camera also changes to 
-enhance the sensation of speed of the player. The player is also able to alter the volume of the audiosource using the the right analog stick. 
+enhance the sensation of speed of the player. The player is also able to alter the volume of the audiosource using the the right analog stick. By pressing X the player can 
+randomly pick a song to play from a list of audioclips on the player object. 
 
 The ship 'tail' is achieved using a sine function. I actually used the concepts I learned from the tutorial about orbits, and utilised it to recreate the
 'tentacle' from lab 5 of Game Engines. It utilises a period. The period is clamped between 0 and 1. In order to get the vertical motion for the tail segments
@@ -118,8 +119,16 @@ any position when looked at.
 ### 	3. 					The Solar System
 
 The solar system is created by generating orbit objects. Each orbit is positioned at the center of the 'sun' object. Each orbit has a child 'planet' which moves along
-an elliptical path. I followed the tutorial to create a 2D flat orbit path, and then expanded on it to create an 'angled' orbit. As far as I am aware, the code
+an elliptical path. I followed the tutorial to create a 2D flat orbit path, and then expanded on it to create an 'angled' orbit. To explain it simply; the code
 essentially draws a path for the planet object to follow, akin to the 'trammel' method of drawing an ellipse in technical drawing. A visualization can be seen here:
 
 [![YouTube](http://img.youtube.com/vi/tsAPaHrqKEA/0.jpg)](https://www.youtube.com/watch?v=tsAPaHrqKEA)
 
+The sine and cosine of the period angle are used for for the x and z axis respectively, to generate the position. The angled orbit takes the Tan of the orbit angle multiplied
+by the z value of the orbit. 
+
+The solar system is randomly generated at the start of the game. The angle and speed and how elliptical the path is randomised. Each of the planets and the sun object react
+to the beat of the music playing.
+
+When the player gets too close to a planet, the planet stops in its orbit, lerps its rotation to target the player and shoots projectiles at the player to jostle them.
+The planets each have an ammunition pool from which to pull. This means that 
