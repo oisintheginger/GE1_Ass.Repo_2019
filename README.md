@@ -98,7 +98,12 @@ The player ship is constructed from basic unity shapes combined together. There 
  a metallic material on the ship. The movement is created by simply adding a rigidbody to the player, disabling the gravity and constantly
 adding force in the forward direction of the player. The player can boost and brake using the Xbox One controller. To steer, the input axis of the left analog stick
 is utilised to rotate the player object. I also implemented a system to reduce manueverability of steering when the player boosts. The FOV of the camera also changes to 
-enhance the sensation of speed of the player. The player is also able to alter the volume of the audiosource using the the right analog stick.
+enhance the sensation of speed of the player. The player is also able to alter the volume of the audiosource using the the right analog stick. 
+
+The ship 'tail' is achieved using a sine function. I actually used the concepts I learned from the tutorial about orbits, and utilised it to recreate the
+'tentacle' from lab 5 of Game Engines. It utilises a period. The period is clamped between 0 and 1. In order to get the vertical motion for the tail segments
+I divided the first quarter of the period(i.e. 0.25) by the amount of segments. Essentially I gave each of the segments a different starting period which is between
+0 and 0.25.
 
 ### 	2.					Central Visualizer
 
@@ -109,4 +114,12 @@ the audio sampling data for the entire project. The scale of each of the 256 seg
 I decided to repeat the first 64 samples because it made the visualizer more interesting. If I used all 256 samples, most of the visualizer
 would not be scaling much to the music, being rather boring. The Visualizer also rotates to  follow the player position, meaning that it can be viewed from 
 any position when looked at.
+
+### 	3. 					The Solar System
+
+The solar system is created by generating orbit objects. Each orbit is positioned at the center of the 'sun' object. Each orbit has a child 'planet' which moves along
+an elliptical path. I followed the tutorial to create a 2D flat orbit path, and then expanded on it to create an 'angled' orbit. As far as I am aware, the code
+essentially draws a path for the planet object to follow, akin to the 'trammel' method of drawing an ellipse in technical drawing. A visualization can be seen here:
+
+[![YouTube](http://img.youtube.com/vi/tsAPaHrqKEA/0.jpg)](https://www.youtube.com/watch?v=tsAPaHrqKEA)
 
